@@ -140,14 +140,14 @@ class FF {
     })
     ws.on('message', function (data, flags) {
       const msgs = data.split(' ')
-      console.log(msgs[0])
+      //console.log(msgs[0])
       switch (msgs[0]) {
         case 'url':
           opn(msgs[1])
-          ws.close()
-          console.log(`User Denied Authentication`)
-          process.exit()
-          //break
+          //ws.close()
+          //console.log(`User Denied Authentication`)
+          //process.exit()
+          break
         case 'token':
           const access_token = msgs[1]
           fs.writeFileSync(argv.tokenfile, access_token)
