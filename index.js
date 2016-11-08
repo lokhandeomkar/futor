@@ -143,7 +143,7 @@ class FF {
       switch (msgs[0]) {
         case 'error':
           ws.close()
-          console.log(`User Denied Authentication`)
+          console.log(`Authentication Denied. Please Provide Authentication.`)
           process.exit()  
         case 'url':
           opn(msgs[1])
