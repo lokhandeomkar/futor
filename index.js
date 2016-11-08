@@ -140,7 +140,7 @@ class FF {
     })
     ws.on('message', function (data, flags) {
       const msgs = data.split(' ')
-      console.log(data)
+      console.log(msgs[0])
       switch (msgs[0]) {
         case 'url':
           opn(msgs[1])
