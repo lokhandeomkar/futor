@@ -28,7 +28,6 @@
     "valid-url": "^1.0.9",
     "ws": "^1.1.0",
     "yargs": "^4.7.1",
-    "futor": "https://github.com/lokhandeomkar/futor/tarball/master"
   },
   "devDependencies": {
     "chai": "^3.5.0",
