@@ -140,11 +140,12 @@ class FF {
     })
     ws.on('message', function (data, flags) {
       const msgs = data.split(' ')
-      console.log(data)
+      //console.log(data)
       switch (msgs[0]) {
         case 'error':
           ws.close()
-          console.log(`User Denied Authentication`)
+          console.error(`User Denied Authentication`)
+          console.error(msgs[1])
           process.exit()  
         case 'url':
           opn(msgs[1])
