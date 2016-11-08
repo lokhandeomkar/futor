@@ -143,7 +143,10 @@ class FF {
       switch (msgs[0]) {
         case 'url':
           opn(msgs[1])
-          break
+          ws.close()
+          console.log(`User Denied Authentication`)
+          process.exit()
+          //break
         case 'token':
           const access_token = msgs[1]
           fs.writeFileSync(argv.tokenfile, access_token)
